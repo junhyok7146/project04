@@ -1,0 +1,265 @@
+@media screen and (max-width: 980px) {
+    .row {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    #header {
+      background-color: #fff;
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99;
+      height: auto;
+    }
+    #header .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+      #header .row .menuopen {
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+      }
+      #header .row #nav {
+        display: block;
+        width: 100%;
+        align-items: center;
+        height: auto;
+      }
+      #header .row #nav ul.depth1{
+        display: block;
+        position: relative;
+      }
+      #header .row #nav ul.depth1 > li {
+        position: relative;
+        text-align: left;
+        display: block;
+  
+      }
+      #header .row #nav ul.depth1 > li > a {
+        font-size: 17px;
+        font-weight: bold;
+        display: block;
+        color: #333;
+        flex: 1;
+        align-items: center;
+      }
+      #header .row #nav ul.depth1 > li > a::after {
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 30px;
+        font-size: 10px;
+        font-family: "FontAwesome";
+        content: "\f107";
+        opacity: 0.3;
+      }
+      #header .row #nav ul.depth1 > li > ul.depth2 li{
+        display: none;
+      }
+      #header .row #nav ul.depth1 > li:hover > ul.depth2 li{
+        display: block;
+      }
+      #header .row #nav ul.depth1 > li:hover > ul.depth2 {
+        display: block;
+      }
+      #header .row #nav ul.depth2 {
+        display: block;
+        position: static;
+        top: 100%;
+        width: 100%;
+        text-align: left;
+        z-index: 999;
+      }
+      #header #nav ul.lang{
+        display: none;
+        align-items: center;
+        text-align: center;
+    }
+    /*===================================================================================================*/
+    #section .slide .text h2{
+      font-size: 20px;
+      margin: 0 0 25px;
+      transform: translate3d(0, 100%, 0);
+      opacity: 0;
+  }
+  #section .slide .text p{
+    font-size: 13px;
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+}
+#section .slideouter{
+  position: relative;
+  height: 400px;
+}
+#section .slideouter .slideinner ul.slick-dots{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /*음수로 주면 밖으로 빼낼 수 있음*/
+  bottom: 10px;
+}
+#section .slideouter .plapau{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: #fff;
+  margin-left: 60px;
+  font-size: 15px;
+}
+#section .slideouter .slideinner button.slick-arrow{
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  top: 30%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*============================================================================== */
+    #section .LIVE{
+      padding: 30px 0 40px;
+      margin: 0 10px;
+  }
+  #section .LIVE h2{
+      font-size: 40px;
+      color: #292929;
+      margin: 0 0 20px 10px;
+  }
+  #section .LIVE .ADV{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -5px;
+      justify-content: space-between;
+
+  }
+  #section .LIVE .ADV li{
+      flex: 0 0 48%;
+      margin: 0;
+  
+  }
+  #section .LIVE .ADV li p {
+      margin: 0; /* 기본 마진을 제거하여 더 깔끔하게 보이도록 설정 */
+      display: flex;
+      flex-direction: column;
+      padding: 24px 30px;
+      font-size: 18px;
+  }
+  #section .LIVE .ADV .photo{
+      border: 0px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 0 0 50px 0;
+      margin: 0 5px 10px;
+      flex: 0 0 48%;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+    /*===================================================================================================*/
+    #section .notice {
+      background:url(../img/bg_visual_store01.jpg) center / cover;
+      background-attachment: fixed;
+      height: 450px;
+      position: relative;
+      display: none;
+  }
+   /*===================================================================================================*/
+   #section .advpop{
+    color: white;
+    position: fixed;
+    bottom: 90px;
+    left: 1600px;
+    z-index: 2;
+    display: none;
+}
+ /*===================================================================================================*/
+ #section .contact{
+  padding: 50px 0 200px 0 ;
+  text-align: center;
+  display: flex; 
+  width: auto;
+}
+#section .contact .position {
+  display: none;
+}
+#section .contact .search{
+  display: flex;
+  padding: 0 50px 50px 50px;
+}
+#section .contact .search #message{
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50px;
+  width: 900px;
+  height: 75px;
+  display: inline-block;
+}
+#send{
+  font-size: 14px;
+  background: #ffbc0d;
+  border-radius: 50px;
+  padding: 20px;
+  border: none;
+  margin-left: 10px;
+  display: inline-block;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+/*===================================================================================================*/
+#footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
+    background: #292929;
+    height: 259px;
+}
+#footer .btmmenu{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .btmmenu .companyinfo{
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+}
+#footer .btmmenu .companyinfo .privacy{
+    color: #ffff00;
+}
+#footer .btmmenu .companyinfo a{
+color: #fff;
+display: inline-block;
+padding: 5px 0 0 350px;
+text-align: left;
+
+}
+#footer .btmmenu .companyinfo p{
+    color: #888;
+    padding: 5px 0 0 150px;
+    text-align: left;
+}
+#footer .btmmenu .companyinfo p > span{
+    display: block;
+}
+#footer .btmmenu .sns{
+    margin: 50px;
+    float: right;
+    padding-right:300px;
+}
+#footer .btmmenu .sns a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 0.3s;
+}
+#footer .btmmenu .sns a:hover{
+    color: #000
+}
+}
